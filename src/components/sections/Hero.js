@@ -100,12 +100,12 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Relax! and let our Tech run the business for you, increasing
+                Relax! and let our solution interwoven with Artificial Intelligence run the business for you, increasing
                 sales, tracking every product from procurement to sales,
-                providing data insights, analysis and notifications while saving
+                providing data insights, analysis, notifications,   e-commerce,  live-cam, social media, and  more juicy evolving features while saving
                 you time to network, live and open more businesses.
               </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
+              <div className="reveal-from-bottom mt-3" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button
                     tag="a"
