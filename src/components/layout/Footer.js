@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Logo from "./partials/Logo";
 import FooterNav from "./partials/FooterNav";
 import FooterSocial from "./partials/FooterSocial";
+import { Fab, Zoom,  } from '@mui/material';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { Box } from '@mui/system';
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -21,10 +24,36 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
     topOuterDivider && "has-top-divider",
     className
   );
-
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    });
+  }, []);
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <footer {...props} className={classes}>
       <div className="container">
+      <Zoom in={showTopBtn}>
+          <Box
+            onClick={() => goToTop()}
+            role="presentation"
+            sx={{ position: 'fixed', bottom: 16, right: 16 }}
+          >
+            <Fab color="primary" size="small" aria-label="scroll back to top">
+              <KeyboardArrowUpIcon />
+            </Fab>
+          </Box>
+        </Zoom>
         <div
           className={classNames(
             "site-footer-inner",

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 
-
 const pics = [
+  "https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used-1024x683.jpg",
   "https://preply.com/wp-content/uploads/2018/08/unnamed.png",
   "https://www.intellspot.com/wp-content/uploads/2020/03/Line-graph-example.png",
   "https://meetjohnsong.files.wordpress.com/2010/01/hockey-stick-graph1.png",

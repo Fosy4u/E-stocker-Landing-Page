@@ -175,7 +175,7 @@ const Header = ({
                             }
                           >
                             {" "}
-                            Sign up{" "}
+                            Sign up. Its free{" "}
                           </span>
                         </Link>
                       </li>

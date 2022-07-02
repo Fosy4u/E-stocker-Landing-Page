@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
@@ -8,6 +8,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particlesConfig from "./partials/particlesConfig";
 import Slide from "./partials/Slide";
+
 
 const propTypes = {
   ...SectionProps.types,
@@ -27,6 +28,7 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
+  const scrollTopRef = useRef(null);
   const [videoModalActive, setVideomodalactive] = useState(false);
   const [hover, setHover] = useState();
   // const openModal = (e) => {
@@ -69,7 +71,7 @@ const Hero = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <div className="container-sm">
+      <div className="container-sm" ref={scrollTopRef}>
         <Particles
           style={{
             height: "100vh",
