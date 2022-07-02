@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-//import Logo from "./partials/Logo";
+import Logo from "./partials/Logo";
 import FooterNav from "./partials/FooterNav";
 import FooterSocial from "./partials/FooterSocial";
 
@@ -32,15 +32,15 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
           )}
         >
           <div className="footer-top space-between text-xxs">
-            FosyTech
+            <Logo />
             <FooterSocial />
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
             <div className="footer-copyright">
-              Developed by{" "}
+              Powered by{" "}
               <a href="https://fosterogwudu.com/" target="blank">
-                Foster Ogwudu (FosyTech)
+                FosyTech
               </a>
               . All right reserved
             </div>
