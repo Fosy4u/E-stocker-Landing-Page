@@ -3,7 +3,6 @@ import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
-import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -30,10 +29,10 @@ const Hero = ({
 }) => {
   const [videoModalActive, setVideomodalactive] = useState(false);
   const [hover, setHover] = useState();
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  };
+  // const openModal = (e) => {
+  //   e.preventDefault();
+  //   setVideomodalactive(true);
+  // };
 
   const closeModal = (e) => {
     e.preventDefault();

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
-import Image from "../../elements/Image";
+
 
 const pics = [
   "https://preply.com/wp-content/uploads/2018/08/unnamed.png",
