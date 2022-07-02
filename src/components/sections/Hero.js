@@ -9,7 +9,6 @@ import { loadFull } from "tsparticles";
 import particlesConfig from "./partials/particlesConfig";
 import Slide from "./partials/Slide";
 
-
 const propTypes = {
   ...SectionProps.types,
 };
@@ -101,10 +100,12 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Relax! and let our solution interwoven with Artificial Intelligence run the business for you, increasing
-                sales, tracking every product from procurement to sales,
-                providing data insights, analysis, notifications,   e-commerce,  live-cam, social media, and  more juicy evolving features while saving
-                you time to network, live and open more businesses.
+                Relax! and let our solution interwoven with Artificial
+                Intelligence run the business for you, increasing sales,
+                tracking every product from procurement to sales, providing data
+                insights, analysis, notifications, e-commerce, live-cam, social
+                media, and more juicy evolving features while saving you time to
+                network, live and open more businesses.
               </p>
               <div className="reveal-from-bottom mt-3" data-reveal-delay="600">
                 <ButtonGroup>
@@ -117,23 +118,11 @@ const Hero = ({
                     onMouseLeave={() => setHover()}
                     className={hover === "sign up" && "text-color-primary"}
                   >
-                    Sign Up
+                    Sign Up. Its Free
                   </Button>
-
                   <Button
                     tag="a"
                     color="dark"
-                    wideMobile
-                    href="#"
-                    onMouseEnter={() => setHover("demo")}
-                    onMouseLeave={() => setHover()}
-                    className={hover === "demo" && "text-color-primary"}
-                  >
-                    Free Demo & Training
-                  </Button>
-                  <Button
-                    tag="a"
-                    color="primary"
                     wideMobile
                     href="#"
                     onMouseEnter={() => setHover("sign in")}
@@ -141,6 +130,17 @@ const Hero = ({
                     className={hover === "sign in" && "text-color-primary"}
                   >
                     Sign In
+                  </Button>
+                  <Button
+                    tag="a"
+                    color="primary"
+                    wideMobile
+                    href="#"
+                    onMouseEnter={() => setHover("demo")}
+                    onMouseLeave={() => setHover()}
+                    className={hover === "demo" && "text-color-primary"}
+                  >
+                    Free Demo & Training
                   </Button>
                 </ButtonGroup>
               </div>
